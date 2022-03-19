@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+:root {
+  --body-color: #555;
+  --body-bg-color: #eee;
+  --link-color: #222;
+  --link-hover-color: #111;
+  --spacer: 3vmin;
+  --golden: 1.618;
+}
+@media ( prefers-color-scheme: dark ) {
+  :root {
+    --body-color: #bbb;
+    --body-bg-color: #222;
+    --link-color: #eee;
+    --link-hover-color: #fff;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: var(--body-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: calc(var(--golden) * var(--golden));
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  box-shadow: 0 1px;
+}
+a:hover {
+  color: var(--link-hover-color);
+  box-shadow: none;
+}
